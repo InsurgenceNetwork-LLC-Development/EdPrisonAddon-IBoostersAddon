@@ -17,12 +17,12 @@ public final class EdPrisonEventListener implements Listener {
 
         IBoostersPlayerCache.BoosterFindResult pResult = IBoosterAPI.getCache(event.getUUID()).findActiveBooster(type, NAMESPACE);
         if (pResult instanceof IBoostersPlayerCache.BoosterFindResult.Success boosterResult) {
-            event.addMultiplier(getMulti(boosterResult.getBooster().getMultiplier()));
+            event.addMultiplier(boosterResult.getBooster().getMultiplier());
         }
 
         GlobalBoosterManager.BoosterFindResult gResult = IBoosterAPI.getGlobalBoosterManager().findBooster(type, NAMESPACE);
         if (gResult instanceof GlobalBoosterManager.BoosterFindResult.Success boosterResult) {
-            event.addMultiplier(getMulti(boosterResult.getBooster().getMultiplier()));
+            event.addMultiplier(boosterResult.getBooster().getMultiplier());
         }
     }
 
@@ -33,17 +33,12 @@ public final class EdPrisonEventListener implements Listener {
 
         IBoostersPlayerCache.BoosterFindResult pResult = IBoosterAPI.getCache(event.getPlayer()).findActiveBooster(type, NAMESPACE);
         if (pResult instanceof IBoostersPlayerCache.BoosterFindResult.Success boosterResult) {
-            event.addPercent(event.getPercent() * getMulti(boosterResult.getBooster().getMultiplier()));
+            event.addPercent(event.getPercent() * boosterResult.getBooster().getMultiplier());
         }
 
         GlobalBoosterManager.BoosterFindResult gResult = IBoosterAPI.getGlobalBoosterManager().findBooster(type, NAMESPACE);
         if (gResult instanceof GlobalBoosterManager.BoosterFindResult.Success boosterResult) {
-            event.addPercent(event.getPercent() * getMulti(boosterResult.getBooster().getMultiplier()));
+            event.addPercent(event.getPercent() * boosterResult.getBooster().getMultiplier());
         }
-    }
-
-
-    private double getMulti(double amount) {
-        return (amount >= 1) ? amount - 1 : amount;
     }
 }

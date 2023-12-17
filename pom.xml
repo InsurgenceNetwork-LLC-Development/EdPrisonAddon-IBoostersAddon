@@ -34,7 +34,7 @@
             <artifactId>edprison</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/libs/EdPrison-5.3.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/libs/EdPrison-5.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
