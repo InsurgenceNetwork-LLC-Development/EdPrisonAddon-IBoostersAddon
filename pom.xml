@@ -14,17 +14,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-    </repositories>
-
     <dependencies>
         <dependency>
             <groupId>org.insurgencedev</groupId>
-            <artifactId>insurgenceboosters</artifactId>
+            <artifactId>IBoosters</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/src/main/libs/IBoosters-0.0.3-alpha.jar</systemPath>

@@ -6,7 +6,7 @@ The `Namespace` must be `EDP_CURRENCY`.
 
 ```yaml
 Type: tokens
-Namespace: EDP_CURRENCY
+Namespace: EDP-CURRENCY
 ```
 
 You also have the ability to create a booster to increase the activation chance of EdPrison enchantments.
@@ -15,5 +15,5 @@ The `Namespace` must be `EDP_ENCHANT`.
 
 ```yaml
 Type: jackhammer
-Namespace: EDP_ENCHANT
+Namespace: EDP-ENCHANT
 ```
