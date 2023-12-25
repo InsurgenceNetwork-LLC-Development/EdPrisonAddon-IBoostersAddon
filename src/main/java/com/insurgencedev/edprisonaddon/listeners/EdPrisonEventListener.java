@@ -13,7 +13,7 @@ public final class EdPrisonEventListener implements Listener {
     @EventHandler
     private void onEarn(EdPrisonAddMultiplierCurrency event) {
         String type = event.getCurrency();
-        final String NAMESPACE = "EDP-CURRENCY";
+        final String NAMESPACE = "EDP_CURRENCY";
 
         IBoostersPlayerCache.BoosterFindResult pResult = IBoosterAPI.getCache(event.getUUID()).findActiveBooster(type, NAMESPACE);
         if (pResult instanceof IBoostersPlayerCache.BoosterFindResult.Success boosterResult) {
@@ -29,7 +29,7 @@ public final class EdPrisonEventListener implements Listener {
     @EventHandler
     private void onTrigger(EdPrisonPossibleEnchantTriggerEvent event) {
         String type = event.getEnchant();
-        final String NAMESPACE = "EDP-ENCHANT";
+        final String NAMESPACE = "EDP_ENCHANT";
 
         IBoostersPlayerCache.BoosterFindResult pResult = IBoosterAPI.getCache(event.getPlayer()).findActiveBooster(type, NAMESPACE);
         if (pResult instanceof IBoostersPlayerCache.BoosterFindResult.Success boosterResult) {
