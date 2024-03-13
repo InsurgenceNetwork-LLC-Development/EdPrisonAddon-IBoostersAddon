@@ -6,7 +6,7 @@
 
     <groupId>org.insurgencedev</groupId>
     <artifactId>EdPrisonAddon</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -20,7 +20,7 @@
             <artifactId>IBoosters</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/libs/IBoosters-1.0.4-API.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/libs/IBoosters-1.0.1-API.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.edp</groupId>
